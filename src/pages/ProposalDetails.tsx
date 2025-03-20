@@ -163,7 +163,7 @@ function ProposalDetails() {
                     <FileText className="h-5 w-5 text-gray-400" />
                   </div>
                   <div className="min-w-0 flex-1">
-                  <a href={`${import.meta.env.VITE_API_URL}${proposal.documentUrl.replace('/api/v1', '')}`} className="focus:outline-none">
+                  <a href={`${import.meta.env.VITE_API_URL.replace('/api/v1', '')}${proposal.documentUrl}`} className="focus:outline-none">
                       <span className="absolute inset-0" aria-hidden="true" />
                       <p className="text-sm font-medium text-gray-900">Proposal Document</p>
                     </a>
@@ -267,7 +267,7 @@ function ProposalDetails() {
                         <h4 className="text-sm font-medium text-gray-900">Updated Document</h4>
                         <div className="mt-2">
                           <a
-                            href={`${import.meta.env.VITE_API_URL}${revision.documentUrl.replace('/api/v1', '')}`}
+                            href={`${import.meta.env.VITE_API_URL.replace('/api/v1', '')}${revision.documentUrl}`}
                             className="flex items-center text-sm text-indigo-600 hover:text-indigo-500"
                           >
                             <FileText className="h-4 w-4 mr-1" />

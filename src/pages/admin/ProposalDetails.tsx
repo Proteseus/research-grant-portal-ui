@@ -145,7 +145,7 @@ function AdminProposalDetails() {
             <div className="mt-2">
               {proposal.documentUrl && (
                 <a
-                  href={`${import.meta.env.VITE_API_URL}${proposal.documentUrl.replace('/api/v1', '')}`}
+                  href={`${import.meta.env.VITE_API_URL.replace('/api/v1', '')}${proposal.documentUrl}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="relative flex items-center space-x-3 rounded-lg border border-gray-300 bg-white px-6 py-5 shadow-sm focus-within:ring-2 focus-within:ring-indigo-500 focus-within:ring-offset-2 hover:border-gray-400"
@@ -258,7 +258,7 @@ function AdminProposalDetails() {
                         <h4 className="text-sm font-medium text-gray-900">Updated Document</h4>
                         <div className="mt-2">
                           <a
-                            href={`${import.meta.env.VITE_API_URL}${revision.documentUrl.replace('/api/v1', '')}`}
+                            href={`${import.meta.env.VITE_API_URL.replace('/api/v1', '')}${revision.documentUrl}`}
                             target="_blank"
                             rel="noopener noreferrer"
                             className="flex items-center text-sm text-indigo-600 hover:text-indigo-500"
