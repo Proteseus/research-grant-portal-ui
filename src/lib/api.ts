@@ -87,6 +87,7 @@ export interface Proposal {
   title: string;
   abstract: string;
   documentUrl: string;
+  documentPublicId: string;
   status: 'DRAFT' | 'SUBMITTED' | 'UNDER_REVIEW' | 'ACCEPTED' | 'REJECTED' | 'REVISIONS_REQUESTED';
   rejectionReason: string | null;
   createdAt: string;
@@ -106,6 +107,7 @@ export interface ProposalRevision {
   proposalId: string;
   changes: string;
   documentUrl: [];
+  documentPublicId: [];
   createdAt: string;
 }
 

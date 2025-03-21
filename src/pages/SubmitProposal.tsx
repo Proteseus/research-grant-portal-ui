@@ -53,7 +53,6 @@ function SubmitProposal() {
       formData.append('title', String(data.title));
       formData.append('abstract', String(data.abstract));
       formData.append('callId', String(callId));
-      formData.append('status', 'DRAFT');
   
       // Add the file last
       if (data.document?.[0]) {
