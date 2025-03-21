@@ -165,7 +165,7 @@ function ProposalDetails() {
                   <div className="min-w-0 flex-1">
                     <a
                       href={proposal.documentUrl}
-                      download={proposal.documentPublicId.replace("researcher/proposals/", "")}
+                      download={proposal.documentPublicId}
                       className="focus:outline-none"
                     >
                       <span className="absolute inset-0" aria-hidden="true" />
