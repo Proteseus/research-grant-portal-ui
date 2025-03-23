@@ -153,6 +153,11 @@ export const authApi = {
     });
     return data;
   },
+
+  verifyUser: async (token: string) => {
+    const { data } = await api.post<{ message: string }>(`/auth/verify-email?token=${token}`);
+    return data;
+  },
 };
 
 export const userApi = {

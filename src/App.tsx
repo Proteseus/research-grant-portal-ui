@@ -11,6 +11,7 @@ import ProposalDetails from './pages/ProposalDetails';
 import Profile from './pages/Profile';
 import ForgotPassword from './pages/ForgotPassword';
 import ResetPassword from './pages/ResetPassword';
+import VerifyUser from './pages/VerifyUser';
 import AdminDashboard from './pages/admin/Dashboard';
 import AdminProposals from './pages/admin/Proposals';
 import AdminProposalDetails from './pages/admin/ProposalDetails';
@@ -41,6 +42,7 @@ function App() {
         <Route path="/register" element={<Register />} />
         <Route path="/forgot-password" element={<ForgotPassword />} />
         <Route path="/reset-password" element={<ResetPassword />} />
+        <Route path="/verify-email" element={<VerifyUser />} />
         <Route
           path="/"
           element={
